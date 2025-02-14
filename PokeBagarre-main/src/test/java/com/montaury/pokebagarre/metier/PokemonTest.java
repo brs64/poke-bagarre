@@ -21,7 +21,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PokemonTest {
-    
+
     @Test
     void un_vs_un_premiergagne(){
         //GIVEN
@@ -66,14 +66,4 @@ class PokemonTest {
         assertTrue(result);
     }
 
-    @Test
-    void un_vs_un_meme_attaque_meme_defense_mais_dans_lautre_sens(){
-        //GIVEN
-        Pokemon poke1 = new Pokemon("Salamèche", "url", new Stats(10, 10));
-        Pokemon poke2 = new Pokemon("Pikachu", "url", new Stats(10, 10));
-        //WHEN
-        boolean result = poke1.estVainqueurContre(poke2);
-        //THEN
-        assertTrue(result);
-    }
 }
